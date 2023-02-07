@@ -1,8 +1,16 @@
-import TakList from './TaskList'
-function HolaMundo() {
+import TakList from "./Components/TaskList";
+import TaskForm from "./Components/TaskForm";
+
+function App() {
   return (
-    <div>HolaMundo</div>
-  )
+    <main className="bg-zinc-900 h-screen">
+     <div className="container mx-auto p-10">
+     <TaskForm/>
+      <TakList/>
+     </div>
+    </main>
+  );
 }
 
-export default HolaMundo
+export default App;
+
